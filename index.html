@@ -1,18 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/scripts.js"></script>
+    <script defer src="scripts/scripts.js"></script>
 </head>
+
 <body>
-    <div class="game">
-        <div class="player">(Player 1)</div>
-        <div class="player">srffhg</div>
-        <div class="board">asgerg</div>
+    <div class="container">
+        <div class="control-bar">
+
+        </div>
+        <div class="game">
+            <div class="game-setup">
+                <div id="welcome">
+                    <h2>Tic Tac Toe</h2>
+                    <p>Welcome to Ultimate Tic-Tac-Toe Showdown - the classic game you know and love, now supercharged
+                        for endless fun! Ready
+                        to test your strategy and claim victory? Whether you're going head-to-head with friends or
+                        sharpening your skills solo,
+                        every move counts. X or O, the choice is yours - but only one can reign supreme. Let's see if
+                        you've got what it takes
+                        to outsmart your opponent and secure your spot on the winner's board!
+
+                        Your next move could be legendary! - Do you want to play?</p>
+                    <button id="play">Lets Play</button>
+                </div>
+                <div id="player-setup">
+                    <div id="p-setup-instruct">
+                        <h2>Player Setup</h2>
+                        <p>1. Enter your name in the text field.
+                        <p>2. Select your marker (X or O).</p>
+                        <p>3. Click "Next"</p>
+                    </div>
+                    <div class="form-div">
+                        <form class="player1-form">
+                            <fieldset>
+                                <label for="name">Player 1
+                                    <strong><span aria-label="Player 1 Name">*</span></strong>
+                                </label>
+                                <input type="text" id="name" name="player1name" required>
+                                <label for="X">
+                                    <input type="radio" id="X" name="symbol" value="X" required>
+                                </label>
+                                <label for="O">
+                                    <input type="radio" name="symbol" id="O" value="O">
+                                </label>
+                            </fieldset>
+                            <button type="submit">Next</button>
+                        </form>
+                        <form class="player2-form">
+                            <fieldset>
+                                <fieldset>
+                                    <label for="name">Player 2
+                                        <strong><span aria-label="Player 2 Name">*</span></strong>
+                                    </label>
+                                    <input type="text" id="name" name="player2name" required>
+                                    <label for="X">
+                                        <input type="radio" id="X" name="symbol" value="X" required>
+                                    </label>
+                                    <label for="O">
+                                        <input type="radio" name="symbol" id="O" value="O">
+                                    </label>
+                                </fieldset>
+                                <button type="submit">Next</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="players">
+                <div  id="p1">Player 1</div>
+                <div  id="p2">Player 2</div>
+            </div>
+            <div class="board">
+                <div class="tiles" id="tile1"></div>
+                <div class="tiles" id="tile2"></div>
+                <div class="tiles" id="tile3"></div>
+                <div class="tiles" id="tile4"></div>
+                <div class="tiles" id="tile5"></div>
+                <div class="tiles" id="tile6"></div>
+                <div class="tiles" id="tile7"></div>
+                <div class="tiles" id="tile8"></div>
+                <div class="tiles" id="tile9"></div>
+            </div>
+        </div>
+        <div class="log-bar"></div>
     </div>
-    
+
+
 </body>
+
 </html>
